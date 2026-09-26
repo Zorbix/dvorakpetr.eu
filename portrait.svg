@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="400" viewBox="0 0 360 400" fill="none">
+  <defs>
+    <filter id="sand-line" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".055" numOctaves="2" seed="8" result="grain"/>
+      <feDisplacementMap in="SourceGraphic" in2="grain" scale="1.6" xChannelSelector="R" yChannelSelector="G"/>
+      <feDropShadow dx="0" dy="1.5" stdDeviation=".4" flood-color="#fff8e9" flood-opacity=".65"/>
+    </filter>
+  </defs>
+  <g stroke="#987b54" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#sand-line)" opacity=".85">
+    <!-- A few deliberately unfinished marks, as if drawn with a finger. -->
+    <path d="M111 133 C100 92 129 64 160 71 M137 80 Q171 42 205 72 M180 74 Q220 53 244 101 L249 125"/>
+    <path d="M111 155 C102 166 108 188 120 190 M124 201 Q135 250 175 262 Q218 263 239 218 L246 188"/>
+    <path d="M117 145 C128 136 157 136 169 143 L167 170 Q153 184 128 173 Q117 165 117 145 Z"/>
+    <path d="M188 142 Q215 132 241 142 L237 167 Q216 179 195 169 Z"/>
+    <path d="M170 148 Q179 143 188 147 M108 143 L118 147 M241 145 L252 139"/>
+    <path d="M181 165 L176 194 Q182 199 190 194"/>
+    <path d="M164 221 Q181 230 200 216"/>
+    <path d="M165 208 l-3 5 M173 206 l-2 5 M183 206 l2 5 M192 205 l3 5" stroke-width="1.8" opacity=".75"/>
+    <path d="M139 216 l3 7 M148 230 l3 7 M160 240 l2 7 M175 244 l1 8 M190 242 l-1 8 M205 235 l-2 7 M219 223 l-3 7" stroke-width="1.8" opacity=".75"/>
+    <path d="M150 257 L146 285 M210 251 L216 283"/>
+    <path d="M143 288 Q103 297 80 328 M218 285 Q252 289 282 319"/>
+    <path d="M147 286 Q178 312 213 285"/>
+  </g>
+</svg>

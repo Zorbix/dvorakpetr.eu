@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <title>Petr Dvořák</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Petr Dvořák</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@100;200;300;400;500;600;700;800;900&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<h1>Hello world</h1>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="#home" aria-current="location">Petr Dvořák</a>
+      <a href="#work">Tvorba</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home" aria-labelledby="home-title">
+      <div class="home-copy">
+        <h1 id="home-title">Petr <span class="name-accent">Dvořák<svg viewBox="0 0 260 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 Q98 1 254 7 M28 14 Q141 7 237 11"/></svg></span></h1>
+        <p class="home-subtitle">Appky a články</p>
+        <a class="work-link" href="#work">Prohlédnout tvorbu <span aria-hidden="true">↓</span><svg viewBox="0 0 260 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 Q98 1 254 7"/></svg></a>
+      </div>
+      <img class="sand-portrait" src="portrait.svg" alt="A simple sketch of a man with glasses, drawn like lines in sand." width="468" height="520">
+    </section>
+    <section id="work" aria-labelledby="work-title">
+      <h2 id="work-title">Tvorba</h2>
+      <div class="projects">
+        <article class="project" aria-labelledby="project-one-title">
+          <h3 id="project-one-title">Brnění a bizár</h3>
+          <img class="project-image" src="brneni-a-bizar.png" alt="Brnění a bizár — středověký jezdec na koni" width="320" height="320" loading="lazy">
+          <p class="project-description">Blog odlehčeně i vážněji se zabývající zajímavostmi z historie.</p>
+          <a class="project-link" href="https://medium.seznam.cz/autor/brneni-a-bizar-678">Link <span aria-hidden="true">↗</span><svg viewBox="0 0 260 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 Q98 1 254 7"/></svg></a>
+        </article>
+        <article class="project" aria-labelledby="project-two-title">
+          <h3 id="project-two-title">Prímový skip ad</h3>
+          <img class="project-image" src="primovy-skip-ad.svg" alt="Logo Prímový skip ad — číslo 60 s kruhovou šipkou" width="240" height="240" loading="lazy">
+          <p class="project-description">Doplněk do prohlížeče umožňující automatické přeskakování reklam v aplikaci známé české digi TV.</p>
+          <div class="browser-links" aria-label="Doplněk pro prohlížeče">
+            <a class="browser-link" href="https://chromewebstore.google.com/detail/prima-skip-ad/nbfjjcajjpfkiccigakjkgpmbbbafldm?hl=en" target="_blank" rel="noopener noreferrer" title="Prímový skip ad v Chrome Web Store"><img src="chrome.svg" width="32" height="32" alt=""><span>Chrome</span></a>
+            <a class="browser-link" aria-disabled="true" title="Odkaz na Firefox doplníme"><img src="firefox.svg" width="32" height="32" alt=""><span>Firefox</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="contact" aria-labelledby="contact-title"><h2 id="contact-title">Kontakt</h2></section>
+  </main>
 </body>
 </html>
