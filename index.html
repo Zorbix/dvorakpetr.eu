@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Petr Dvořák</title>
+  <link rel="icon" type="image/icon" href="/images/favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Grenze:wght@100;200;300;400;500;600;700;800;900&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=contact-envelope">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -26,24 +27,24 @@
         <p class="home-subtitle">Appky a články</p>
         <a class="work-link" href="#work">Prohlédnout tvorbu <span aria-hidden="true">↓</span><svg viewBox="0 0 260 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 Q98 1 254 7"/></svg></a>
       </div>
-      <img class="sand-portrait" src="portrait.svg" alt="A simple sketch of a man with glasses, drawn like lines in sand." width="468" height="520">
+      <img class="sand-portrait" src="images/portrait.svg" alt="A simple sketch of a man with glasses, drawn like lines in sand." width="468" height="520">
     </section>
     <section id="work" aria-labelledby="work-title">
       <h2 id="work-title">Tvorba</h2>
       <div class="projects">
         <article class="project" aria-labelledby="project-one-title">
           <h3 id="project-one-title">Brnění a bizár</h3>
-          <img class="project-image" src="brneni-a-bizar.png" alt="Brnění a bizár — středověký jezdec na koni" width="320" height="320" loading="lazy">
+          <img class="project-image" src="images/brneni-a-bizar.png" alt="Brnění a bizár — středověký jezdec na koni" width="320" height="320" loading="lazy">
           <p class="project-description">Blog odlehčeně i vážněji se zabývající zajímavostmi z historie.</p>
           <a class="project-link" href="https://medium.seznam.cz/autor/brneni-a-bizar-678">Link <span aria-hidden="true">↗</span><svg viewBox="0 0 260 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 Q98 1 254 7"/></svg></a>
         </article>
         <article class="project" aria-labelledby="project-two-title">
           <h3 id="project-two-title">Prímový skip ad</h3>
-          <img class="project-image" src="primovy-skip-ad.svg" alt="Logo Prímový skip ad — číslo 60 s kruhovou šipkou" width="240" height="240" loading="lazy">
+          <img class="project-image" src="images/primovy-skip-ad.svg" alt="Logo Prímový skip ad — číslo 60 s kruhovou šipkou" width="240" height="240" loading="lazy">
           <p class="project-description">Doplněk do prohlížeče umožňující automatické přeskakování reklam v aplikaci známé české digi TV.</p>
           <div class="browser-links" aria-label="Doplněk pro prohlížeče">
-            <a class="browser-link" href="https://chromewebstore.google.com/detail/prima-skip-ad/nbfjjcajjpfkiccigakjkgpmbbbafldm?hl=en" target="_blank" rel="noopener noreferrer" title="Prímový skip ad v Chrome Web Store"><img src="chrome.svg" width="32" height="32" alt=""><span>Chrome</span></a>
-            <a class="browser-link" aria-disabled="true" title="Odkaz na Firefox doplníme"><img src="firefox.svg" width="32" height="32" alt=""><span>Firefox</span></a>
+            <a class="browser-link" href="https://chromewebstore.google.com/detail/prima-skip-ad/nbfjjcajjpfkiccigakjkgpmbbbafldm?hl=en" target="_blank" rel="noopener noreferrer" title="Prímový skip ad v Chrome Web Store"><img src="images/chrome.svg" width="32" height="32" alt=""><span>Chrome</span></a>
+            <a class="browser-link" aria-disabled="true" title="Odkaz na Firefox doplníme"><img src="images/firefox.svg" width="32" height="32" alt=""><span>Firefox</span></a>
           </div>
         </article>
       </div>
@@ -52,6 +53,7 @@
       <div class="contact-content">
         <h2 id="contact-title">Kontakt</h2>
         <p class="contact-intro">Chceš mi něco napsat?</p>
+        <div class="contact-layout">
         <form class="contact-form" action="https://formspree.io/f/mwlprjdz" method="POST">
           <label for="contact-email">Tvůj e-mail</label>
           <input id="contact-email" type="email" name="email" autocomplete="email" required maxlength="254">
@@ -61,6 +63,8 @@
           <textarea id="contact-message" name="message" rows="3" required maxlength="10000"></textarea>
           <button class="contact-submit" type="submit">Odeslat zprávu <span aria-hidden="true">↗</span><svg viewBox="0 0 260 16" preserveAspectRatio="none" aria-hidden="true"><path d="M4 10 Q98 1 254 7"/></svg></button>
         </form>
+        <img class="sand-envelope" src="images/envelope.svg" alt="" width="400" height="320" loading="lazy">
+        </div>
       </div>
     </section>
   </main>

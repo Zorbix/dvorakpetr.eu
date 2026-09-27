@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="320" viewBox="0 0 400 320" fill="none">
+  <defs>
+    <filter id="sand-line" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".055" numOctaves="2" seed="8" result="grain"/>
+      <feDisplacementMap in="SourceGraphic" in2="grain" scale="1.6" xChannelSelector="R" yChannelSelector="G"/>
+      <feDropShadow dx="0" dy="1.5" stdDeviation=".4" flood-color="#fff8e9" flood-opacity=".65"/>
+    </filter>
+  </defs>
+  <g stroke="#987b54" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" filter="url(#sand-line)" opacity=".85" transform="rotate(-7 200 160)">
+    <path d="M66 87 Q185 82 331 89 Q336 159 329 236 Q197 241 66 234 Q61 168 66 98"/>
+    <path d="M70 93 Q131 145 192 179 Q200 184 208 177 Q272 133 326 94"/>
+    <path d="M72 228 Q119 185 157 158 M242 160 Q288 202 323 229"/>
+  </g>
+</svg>
